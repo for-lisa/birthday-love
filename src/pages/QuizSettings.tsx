@@ -17,21 +17,27 @@ interface Question {
 const defaultQuestions: Question[] = [
   {
     id: 1,
-    question: 'Bulan apa kita jadian?',
-    hint: 'Bulan ke berapa dalam setahun?',
+    question: 'Ada berapa orang yang paling cantik, paling gemas, dan paling aku sayang di seluruh galaksi ini?',
+    hint: 'Orangnya sedang membaca ini didepan aku sekarang xixixi...>.<',
     answer: '1',
   },
   {
     id: 2,
-    question: 'Tanggal berapa kita jadian?',
-    hint: 'Tanggal spesial kita...',
-    answer: '4',
+    question: 'Dalam seminggu, ada berapa hari aku merasa sayang dan kangen terus sama kamu?',
+    hint: 'Berapaa hayooo...',
+    answer: '7',
   },
   {
     id: 3,
-    question: 'Tahun berapa kita jadian? (2 digit terakhir)',
-    hint: 'Tahun 20XX...',
-    answer: '24',
+    question: 'Berapa jumlah rahasia yang aku sembunyiin dari kamu, termasuk niatku buat beliin kado ini?',
+    hint: 'Kosong Melompong :V',
+    answer: '0',
+  },
+  {
+    id: 4,
+    question: "Kalau kalimat 'I LOVE YOU' ada 3 kata, coba hitung ada berapa jumlah kata dalam kalimat 'SAYANG BANGET SAMA LISA'?",
+    hint: 'berapaa yaaa....',
+    answer: '4',
   },
 ];
 
@@ -42,7 +48,7 @@ const QuizSettings = () => {
     return saved ? JSON.parse(saved) : defaultQuestions;
   });
   const [correctPin, setCorrectPin] = useState(() => {
-    return localStorage.getItem('quiz-pin') || '142';
+    return localStorage.getItem('quiz-pin') || '022';
   });
   const [saved, setSaved] = useState(false);
 
